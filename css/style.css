@@ -93,7 +93,7 @@ color:#404BBF;
 line-height: 150%;
 padding: 24px 0;
 position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .header-nav-link:hover,
 .header-nav-link:active,
@@ -101,7 +101,7 @@ position: relative;
 color: #404BBF ;
 }
 
-.header-nav-link:hover::after {
+.header-nav-link::after {
     content: '';
     width: 100%;
     position: absolute;
@@ -137,8 +137,8 @@ letter-spacing: 0.02em
 /*section 1*/
 .title-page {
     padding: 188px 0;
-    background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office\ 1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
     max-width: 1440px;
     background-color: #2E2F42;
     background-repeat: no-repeat;
@@ -280,6 +280,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-link:hover,
 .team-list-link:focus {
@@ -428,6 +429,7 @@ justify-content: center;
 align-items: center;
 border-radius: 50%;
 background-color: #4D5AE5;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover,
 .footer-link:focus {
