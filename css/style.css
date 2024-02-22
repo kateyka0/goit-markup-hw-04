@@ -144,6 +144,7 @@ letter-spacing: 0.02em
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: auto;
 }
 .title {
     font-size: 56px;
