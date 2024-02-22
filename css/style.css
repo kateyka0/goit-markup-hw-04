@@ -70,6 +70,7 @@ body {
     text-transform: uppercase;
     margin-right: 76px;
 }
+
 .header-title-name {
     color: #2E2F42;
 }
@@ -93,6 +94,17 @@ padding: 24px 0;
 .header-nav-link:active,
 .header-nav-link:focus {
 color: #404BBF ;
+}
+.header-nav-link:hover::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404BBF;
+    margin-top: 20px;
+
 }
 /*address*/
 .address {
@@ -175,7 +187,17 @@ border: 0;
 .benefits-item {
     width: calc((100% - 72px) / 4);
 }
-
+.benefits-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+}
 .benefits-title {
 font-size: 20px;
 font-weight: 500;
@@ -230,7 +252,30 @@ width: calc((100% - 72px) / 4);
     letter-spacing: 0.02em;
     text-align: center;
 }
+.social-link {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    gap: 24px;
+}
+.team-list-link {
+    display: flex;
+    justify-content: center;
+        align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+}
+.team-list-link:hover {
+    background-color: #404BBF;
+}
+.team-list-icon {
+    fill: #FFFFFF;
+}
 /*section 4*/
+
 .portfolio-title {
     font-size: 36px;
     font-weight: 700;
@@ -272,12 +317,22 @@ letter-spacing: 0.02em;
 .section-footer {
     padding-top: 100px;
     padding-bottom: 100px;
+    
 }
 .footer {
     background-color: #2E2F42;
 
 }
+.footer-social{
+    display: inline-block;
+    
+}
 
+.footer-link-icon {
+display: flex;
+margin-top: 16px;
+gap: 16px;
+}
 .footer-title {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -298,5 +353,28 @@ letter-spacing: 0.02em;
     color: #F4F4FD;
     line-height: 150%;
     letter-spacing: 0.02em;
-   margin-right: 864px;
+    width: 264px;
+   margin-right: 120px;
+}
+
+.social-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+}
+.footer-link {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: #4D5AE5;
+}
+.footer-link:hover {
+    background-color: #31D0AA;}
+.list-icon {
+    fill: #f4f4fd;
 }
